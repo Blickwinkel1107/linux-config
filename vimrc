@@ -65,3 +65,4 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 execute pathogen#infect()
+map <C-n> :NERDTree<CR>
