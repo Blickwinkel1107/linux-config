@@ -102,10 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -lhF'
+alias ll='ls -lh'
 alias la='ls -A'
-alias l='ls -CF'
-alias qr='tree -hF'
+alias l='ls -C'
+alias qr='tree -h'
 alias pycharm='/opt/pycharm-2018.2.1/bin/pycharm.sh'
 alias chrome='/opt/google/chrome/chrome'
 alias tim='/opt/TIM/TIM-x86_64.AppImage'
