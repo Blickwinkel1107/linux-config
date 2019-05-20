@@ -7,6 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
 ZSH_THEME="ys"
 #ZSH_THEME="agnoster"
 #ZSH_THEME="avit"
@@ -103,11 +104,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -lh'
-alias la='ls -A'
+alias la='ls -CA'
+alias lla='ls -lha'
 alias l='ls -C'
 alias qr='tree -h'
 alias pycharm='/opt/pycharm-2018.2.1/bin/pycharm.sh'
 alias chrome='/opt/google/chrome/chrome'
 alias tim='/opt/TIM/TIM-x86_64.AppImage'
-alias lantern='~/Downloads/lantern-installer-64-bit/data/usr/lib/lantern/lantern.sh'
 alias eclipse='~/egit-master/eclipse/eclipse'
+alias music='/bin/netease-cloud-music'
+alias lantern='~/.lantern/bin/lantern'
+alias monitor='deepin-system-monitor'
+alias file-manager='dde-file-manager'
+alias xclip='xclip'
+alias clipboard='xclip -selection clipboard'
+alias image-viewer='deepin-image-viewer'
+alias wechat='electronic-wechat'
+alias wps='/usr/lib/office6/wps'
+alias pdf='/opt/master-pdf-editor-5/masterpdfeditor5'
+alias okular='okular'
+alias youdao-dict='/usr/bin/youdao-dict'
