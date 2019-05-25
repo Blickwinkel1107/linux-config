@@ -66,11 +66,15 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+[[ -s /home/perceptron/.autojump/etc/profile.d/autojump.sh ]] && source /home/perceptron/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
 plugins=(
   git
   extract
   z
   history-substring-search
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
