@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/perceptron/.oh-my-zsh"
+  export PYTHONSTARTUP=~/.pythonStartUp.py
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -107,10 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -lh'
-alias la='ls -CA'
-alias lla='ls -lha'
-alias l='ls -C'
+alias ll='ls -lh --group-directories-first'
+alias la='ls -CA --group-directories-first'
+alias lla='ls -lha --group-directories-first'
+alias l='ls -C --group-directories-first'
 alias qr='tree -h'
 alias pycharm='/opt/pycharm-2018.2.1/bin/pycharm.sh'
 alias chrome='/opt/google/chrome/chrome'
@@ -124,7 +125,9 @@ alias xclip='xclip'
 alias clipboard='xclip -selection clipboard'
 alias image-viewer='deepin-image-viewer'
 alias wechat='electronic-wechat'
-alias wps='/usr/lib/office6/wps'
+alias word='/usr/lib/office6/wps'
 alias pdf='/opt/master-pdf-editor-5/masterpdfeditor5'
 alias okular='okular'
 alias youdao-dict='/usr/bin/youdao-dict'
+alias excel='et'
+alias ppt='wpp'
