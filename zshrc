@@ -108,9 +108,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -lh --group-directories-first'
+alias lx='ls -lh --group-directories-first'
 alias la='ls -CA --group-directories-first'
-alias lla='ls -lha --group-directories-first'
+alias lxa='ls -lha --group-directories-first'
 alias l='ls -C --group-directories-first'
 alias qr='tree -h'
 alias pycharm='/opt/pycharm-2018.2.1/bin/pycharm.sh'
