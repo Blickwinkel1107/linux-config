@@ -21,7 +21,7 @@ else
 fi
 
 # VCS
-YS_VCS_PROMPT_PREFIX1=" %{$fg[white]%}on%{$reset_color%} "
+YS_VCS_PROMPT_PREFIX1=" %{$fg[white]%}->%{$reset_color%} "
 YS_VCS_PROMPT_PREFIX2=":%{$purple%}"
 YS_VCS_PROMPT_SUFFIX="%{$reset_color%}"
 YS_VCS_PROMPT_DIRTY=" %{$fg[red]%}x"
@@ -65,8 +65,8 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 PROMPT="%{$terminfo[bold]$fg[blue]%}$%{$reset_color%} \
 %(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$terminfo[bold]$turquoise%}%n) \
 %{$fg[white]%}@ \
-%{$terminfo[bold]$turquoise%}%m \
-%{$fg[white]%}in \
+%{$terminfo[bold]$turquoise%}%m\
+%{$fg[white]%} :: \
 %{$terminfo[bold]$purple%}%~%{$reset_color%}\
 ${hg_info}\
 ${git_info}\

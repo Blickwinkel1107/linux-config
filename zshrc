@@ -73,12 +73,12 @@ autoload -U compinit && compinit -u
 plugins=(
   git
   extract
-  z
   history-substring-search
   autojump
 )
 
 source $ZSH/oh-my-zsh.sh
+#tmux source-file .tmux.conf
 
 # User configuration
 
@@ -130,3 +130,5 @@ alias excel='et'
 alias ppt='wpp'
 alias 7zip-up='7z a -t7z -mx=9 -m0=lzma2 -md=512m -ms=4g -mmt'
 alias px='ps --forest'
+alias tmuxload='tmux source-file ~/.tmux.conf'
+

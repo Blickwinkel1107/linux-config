@@ -58,3 +58,4 @@ set smartcase          " Do smart case matching
 set ruler " 打开状态栏标尺
 "set mouse=a		" Enable mouse usage (all modes)
 set laststatus=2 " 显示状态栏 (默认值为 1, 无法显示状态栏)
+set mouse=a
