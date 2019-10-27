@@ -131,4 +131,4 @@ alias ppt='wpp'
 alias 7zip-up='7z a -t7z -mx=9 -m0=lzma2 -md=512m -ms=4g -mmt'
 alias px='ps --forest'
 alias tmuxload='tmux source-file ~/.tmux.conf'
-
+alias psforest='px -ef | less'
