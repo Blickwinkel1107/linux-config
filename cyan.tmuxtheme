@@ -8,6 +8,8 @@
 # https://github.com/Lokaltog/powerline-fonts
 #
 
+Iface=$("cat /proc/net/route | awk '$8=='00000000'' | awk '{print $1}'")
+ip_external=$("ifconfig $Iface | grep 'inet ' | awk '{print $2}'")
 # Status update interval
 set -g status-interval 1
 
@@ -16,8 +18,8 @@ set -g status-style fg=colour240,bg=colour233
 
 # Left side of status bar
 set -g status-left-style bg=colour233,fg=colour243
-set -g status-left-length 40
-set -g status-left "#[fg=colour233,bg=colour39,bold] #(whoami) #[fg=colour39,bg=colour240,nobold]#[fg=colour233,bg=colour240] #H #[fg=colour240,bg=colour235]#[fg=colour240,bg=colour235] #(hostname -i) #[fg=colour235,bg=colour233,nobold]"
+set -g status-left-length 100
+set -g status-left "#[fg=colour233,bg=colour39,bold] #(whoami) #[fg=colour39,bg=colour240,nobold]#[fg=colour233,bg=colour240] #H #[fg=colour240,bg=colour235]#[fg=colour240,bg=colour235] #(echo $ip_external) #[fg=colour235,bg=colour233,nobold]"
 
 # Right side of status bar
 set -g status-right-style bg=colour233,fg=colour243
