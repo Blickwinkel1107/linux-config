@@ -8,6 +8,8 @@
 # https://github.com/Lokaltog/powerline-fonts
 #
 
+Iface=$("cat /proc/net/route | awk '$8=='00000000' {print $1}'")
+ip_external=$("ifconfig $Iface | awk '/inet / {print $2}'")
 # Status update interval
 set -g status-interval 1
 
